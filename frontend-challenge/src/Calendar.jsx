@@ -8,18 +8,18 @@ import { ChevronLeft, ChevronRight, Edit3, Calendar as CalendarIcon, Save, Calen
 import { motion, AnimatePresence } from 'framer-motion';
 
 const MONTH_IMAGES = {
-  0: "https://images.unsplash.com/photo-1445207703816-11f8e1df3728?q=80&w=1200&auto=format&fit=crop", // Jan (Snow)
-  1: "https://images.unsplash.com/photo-1483728642387-6c3ba6c66911?q=80&w=1200&auto=format&fit=crop", // Feb (Love context)
-  2: "https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?q=80&w=1200&auto=format&fit=crop", // Mar (Spring)
-  3: "https://images.unsplash.com/photo-1520050735087-1ed3f1a0fcba?q=80&w=1200&auto=format&fit=crop", // Apr (April showers/flowers)
-  4: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1200&auto=format&fit=crop", // May (Dense nature)
-  5: "https://images.unsplash.com/photo-1471922694854-ff1b63b20146?q=80&w=1200&auto=format&fit=crop", // Jun (Lake/Summer)
-  6: "https://images.unsplash.com/photo-1473496169904-6a0b8ac149ef?q=80&w=1200&auto=format&fit=crop", // Jul (Tropical)
-  7: "https://images.unsplash.com/photo-1443397646383-16272048780e?q=80&w=1200&auto=format&fit=crop", // Aug (Sunflowers)
-  8: "https://images.unsplash.com/photo-1413867623588-da567a1b41ac?q=80&w=1200&auto=format&fit=crop", // Sep (Autumn start)
-  9: "https://images.unsplash.com/photo-1445173515082-cb2f11edc954?q=80&w=1200&auto=format&fit=crop", // Oct (Fall)
-  10: "https://images.unsplash.com/photo-1423483641154-715697241f32?q=80&w=1200&auto=format&fit=crop", // Nov (Late fall)
-  11: "https://images.unsplash.com/photo-1482811449339-166299fbd1a9?q=80&w=1200&auto=format&fit=crop", // Dec (Winter)
+  0: "https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?q=80&w=1200&auto=format&fit=crop", // Jan
+  1: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1200&auto=format&fit=crop", // Feb
+  2: "https://images.unsplash.com/photo-1443397646383-16272048780e?q=80&w=1200&auto=format&fit=crop", // Mar
+  3: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1200&auto=format&fit=crop", // Apr
+  4: "https://images.unsplash.com/photo-1501854140801-50d01698950b?q=80&w=1200&auto=format&fit=crop", // May
+  5: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1200&auto=format&fit=crop", // Jun
+  6: "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=1200&auto=format&fit=crop", // Jul
+  7: "https://images.unsplash.com/photo-1476820865390-c52aeebb9891?q=80&w=1200&auto=format&fit=crop", // Aug
+  8: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop", // Sep
+  9: "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1200&auto=format&fit=crop", // Oct
+  10: "https://images.unsplash.com/photo-1471115853179-bb1d604434e0?q=80&w=1200&auto=format&fit=crop", // Nov
+  11: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=1200&auto=format&fit=crop", // Dec
 };
 
 // Extremely explicit color tracking to ensure Tailwind v4 compilation works beautifully!
